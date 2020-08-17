@@ -1,0 +1,1721 @@
+# Translation of Themes - OnePress in Hungarian
+# This file is distributed under the same license as the Themes - OnePress package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-06-29 12:39:18+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: hu\n"
+"Project-Id-Version: Themes - OnePress\n"
+
+#: inc/admin/dashboard.php:272
+msgid "Create a support ticket"
+msgstr "Hozzon létre egy támogatási jegyet"
+
+#: inc/customize-configs/options-header.php:345
+msgid "Transparent Logo Height in Pixel"
+msgstr "Átlátszó embléma a pixelben"
+
+#: inc/customize-configs/section-hero.php:542
+msgid "Open Button #2 In New Window"
+msgstr "Nyissa meg a #2  ablakot az új ablakban"
+
+#: inc/customize-configs/section-hero.php:476
+msgid "Open Button #1 In New Window"
+msgstr "Nyissa meg a #1 ablakot az új ablakban"
+
+#: inc/metabox.php:175
+msgid "Apply header cover settings for single product."
+msgstr "Alkalmazza a fejléc borító beállításait egyetlen termékre."
+
+#: inc/admin/dashboard.php:393
+msgid "Keep %s updated"
+msgstr "%s frissítése"
+
+#: inc/admin/dashboard.php:314
+msgid "Your settings were copied."
+msgstr "A beállítások másolva vannak. "
+
+#: inc/metabox.php:166
+msgid "Hide footer."
+msgstr "A lábrész elrejtése."
+
+#: inc/metabox.php:155
+msgid "Display page excerpt as header cover description."
+msgstr "A megjelenő oldal részlete fejléc-lefedő leírásként."
+
+#: inc/metabox.php:149
+msgid "Display featured image as header cover."
+msgstr "A kiemelt kép jelenik meg fejléc fedélként."
+
+#: inc/metabox.php:143
+msgid "Hide page title area."
+msgstr "Az oldal címének elrejtése."
+
+#: inc/metabox.php:138
+msgid "Hide header."
+msgstr "A fejléc elrejtése."
+
+#: inc/metabox.php:161
+msgid "Hide breadcrumb."
+msgstr "A breadcrumb elrejtése."
+
+#: inc/customize-configs/options-header.php:179
+msgid "Only set if display site tagline."
+msgstr "Csak akkor állítsa be, ha a megjelenítési webhely bemutatkozó szöveg."
+
+#: inc/customize-configs/options-header.php:177
+msgid "Site Tagline Color"
+msgstr "Oldal bemutatkozó szövegének színe"
+
+#: inc/sanitize.php:259
+msgid "Upgrade to %1s to unlock this feature."
+msgstr "Frissítse a %1s-ra a funkció feloldásához."
+
+#: inc/metabox.php:38
+msgid "Page Settings"
+msgstr "Oldalbeállítások"
+
+#: inc/admin/dashboard.php:594
+msgid "Get OnePress Plus now!"
+msgstr "Legyen az Öné a OnePress Plus most!"
+
+#: inc/admin/dashboard.php:237
+msgid "Free vs PLUS"
+msgstr "Ingyenes vs PLUS"
+
+#: inc/admin/dashboard.php:235
+msgid "Recommended Actions"
+msgstr "Ajánlott tevékenységek"
+
+#: inc/customize-configs/section-upsell.php:38
+msgid "OnePress Plus Available! Take a look"
+msgstr "OnePress Plus elérhető! Nézze meg"
+
+#: inc/customize-configs/section-upsell.php:28
+msgid "<h4 class=\"customizer-group-heading-message\">Drag &amp; Drop Section Orders</h4><p class=\"customizer-group-heading-message\">Check out the <a target=\"_blank\" href=\"https://www.famethemes.com/plugins/onepress-plus/?utm_source=theme_customizer&utm_medium=text_link&utm_campaign=onepress_customizer#get-started\">OnePress Plus</a> version for full control over the frontpage SECTIONS ORDER!</p><h4 class=\"customizer-group-heading-message\">Advanced Section Styling</h4><p class=\"customizer-group-heading-message\">Check out the <a target=\"_blank\" href=\"https://www.famethemes.com/plugins/onepress-plus/?utm_source=theme_customizer&utm_medium=text_link&utm_campaign=onepress_customizer#get-started\">OnePress Plus</a> version for full control over the section styling which includes background color, image, video, parallax effect, custom style and more ...</p>"
+msgstr "<h4 class=\"customizer-group-heading-message\">Drag &amp; Drop Section Orders</h4><p class=\"customizer-group-heading-message\">Nézze meg a <a target=\"_blank\" href=\"https://www.famethemes.com/plugins/onepress-plus/?utm_source=theme_customizer&utm_medium=text_link&utm_campaign=onepress_customizer#get-started\">OnePress Plus</a> verzió a teljes elrendezéshez a SZEKCIÓK SORRENDJÉBEN!</p><h4 class=\"customizer-group-heading-message\">Fejlett Szekció Stílus</h4><p class=\"customizer-group-heading-message\">Nézze meg a <a target=\"_blank\" href=\"https://www.famethemes.com/plugins/onepress-plus/?utm_source=theme_customizer&utm_medium=text_link&utm_campaign=onepress_customizer#get-started\">OnePress Plus</a>  verzió a szekció stílusának teljes ellenőrzéséhez, amely háttérszínt, képet, videót, parallax effektust, egyéni stílust és többet tartalmaz ...</p>"
+
+#: inc/customize-configs/section-news.php:247
+msgid "Ascending"
+msgstr "Növekvő"
+
+#: inc/customize-configs/section-news.php:246
+msgid "Descending"
+msgstr "Csökkenő"
+
+#: inc/customize-configs/section-news.php:242
+msgid "Order"
+msgstr "Sorrend"
+
+#: inc/customize-configs/section-news.php:227
+msgid "Random order"
+msgstr "Véletlen sorrend"
+
+#: inc/customize-configs/section-news.php:226
+msgid "Order by Page Order"
+msgstr "Rendezés sorrend szerint"
+
+#: inc/customize-configs/section-news.php:225
+msgid "Comment Count"
+msgstr "Hozzászólásszám"
+
+#: inc/customize-configs/section-news.php:224
+msgid "Date"
+msgstr "Dátum"
+
+#: inc/customize-configs/section-news.php:222
+msgid "Author"
+msgstr "Szerző"
+
+#: inc/customize-configs/section-news.php:221
+msgid "ID"
+msgstr "ID"
+
+#: inc/customize-configs/section-news.php:220
+#: inc/customize-configs/options-single.php:27
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: inc/customize-configs/section-news.php:216
+msgid "Order By"
+msgstr "Rendezés"
+
+#: inc/customize-configs/section-news.php:200
+msgid "Category to show"
+msgstr "Kategória megjelenítése"
+
+#: inc/customize-configs/section-services.php:214
+msgid "1x"
+msgstr "1x"
+
+#: inc/customize-configs/section-services.php:213
+msgid "2x"
+msgstr "2x"
+
+#: inc/customize-configs/section-services.php:212
+msgid "3x"
+msgstr "3x"
+
+#: inc/customize-configs/section-services.php:211
+msgid "4x"
+msgstr "4x"
+
+#: inc/customize-configs/section-services.php:210
+msgid "5x"
+msgstr "5x"
+
+#: inc/customize-configs/section-services.php:205
+msgid "Icon Size"
+msgstr "Ikonméret"
+
+#: inc/customize-configs/section-about.php:112
+msgid "Layout Settings"
+msgstr "Elrendezési Beállítások"
+
+#: inc/customize-configs/section-hero.php:393
+msgid "Rotating Text Background"
+msgstr "Forgó Szöveges Háttér"
+
+#: inc/customize-configs/section-hero.php:378
+msgid "Rotating Text Color"
+msgstr "Forgó Szöveges Szín"
+
+#: inc/customize-configs/section-hero.php:354
+msgid "We are <span class=\"js-rotating\">OnePress | One Page | Responsive | Perfection</span>"
+msgstr "Mi vagyunk <span class=\"js-rotating\">OnePress | One Page | Responsive | Perfection</span>"
+
+#: inc/customize-configs/section-hero.php:311
+msgid "Want to add <strong>background video</strong> for hero section? Upgrade to <a target=\"_blank\" href=\"https://www.famethemes.com/plugins/onepress-plus/?utm_source=theme_customizer&utm_medium=text_link&utm_campaign=onepress_customizer#get-started\">OnePress Plus</a> version."
+msgstr "Szeretné hozzáadni <strong>background video</strong> a hero szekcióhoz? Frissítse <a target=\"_blank\" href=\"https://www.famethemes.com/plugins/onepress-plus/?utm_source=theme_customizer&utm_medium=text_link&utm_campaign=onepress_customizer#get-started\">OnePress Plus</a> verzió."
+
+#: inc/customize-configs/section-hero.php:81
+msgid "Disable Preload Icon"
+msgstr "Letiltja az előtöltés ikonját"
+
+#: inc/customize-configs/options-footer.php:332
+msgid "Footer Copyright"
+msgstr "Lábrész Copyright"
+
+#: inc/customize-configs/options-footer.php:320
+#: inc/customize-configs/options-footer.php:386
+msgid "Link Hover Color"
+msgstr "Link hover Színe"
+
+#: inc/customize-configs/options-footer.php:304
+#: inc/customize-configs/options-footer.php:373
+msgid "Link Color"
+msgstr "Link Színe"
+
+#: inc/customize-configs/options-footer.php:287
+msgid "Widget Title Color"
+msgstr "Bővítmény Cím Szín"
+
+#: inc/customize-configs/options-footer.php:238
+msgid "Enter int numbers and sum of them must smaller or equal 12, separated by \"+\""
+msgstr "Adja meg az int számokat, és ezek összegének kisebbnek vagy egyenlőnek kell lennie 12, a \"+\""
+
+#: inc/customize-configs/options-footer.php:236
+msgid "Custom footer %s columns width"
+msgstr "Egyéni lábléc %s oszlop szélessége"
+
+#: inc/customize-configs/options-footer.php:236
+msgid "Custom footer 1 column width"
+msgstr "Egyéni lábléc 1 oszlopszélesség"
+
+#: inc/customize-configs/options-footer.php:212
+msgid "Disable footer widgets"
+msgstr "Letiltja a lábléc widgeteket"
+
+#: inc/customize-configs/options-footer.php:206
+msgid "Number footer columns to display."
+msgstr "Számos lábléc oszlop megjelenítése."
+
+#: inc/customize-configs/options-footer.php:186
+msgid "Footer Widgets"
+msgstr "Lábrész Widgetek "
+
+#: inc/customize-configs/options-footer.php:174
+#: inc/customize-configs/options-footer.php:254
+#: inc/customize-configs/options-footer.php:360
+msgid "Text Color"
+msgstr "Szöveg Szín"
+
+#: inc/customize-configs/section-counter.php:131
+#: inc/customize-configs/options-footer.php:78
+#: inc/customize-configs/section-team.php:153
+#: inc/customize-configs/section-services.php:158
+#: inc/customize-configs/section-about.php:159
+#: inc/customize-configs/section-features.php:156
+msgid "Upgrade to <a target=\"_blank\" href=\"https://www.famethemes.com/plugins/onepress-plus/?utm_source=theme_customizer&utm_medium=text_link&utm_campaign=onepress_customizer#get-started\">OnePress Plus</a> to be able to add more items and unlock other premium features!"
+msgstr "Frissítsen a <a target=\"_blank\" href=\"https://www.famethemes.com/plugins/onepress-plus/?utm_source=theme_customizer&utm_medium=text_link&utm_campaign=onepress_customizer#get-started\">OnePress Plus</a> elemre, hogy képes legyen több elemet és más prémium szolgáltatást felvenni!"
+
+#: inc/customize-configs/options-footer.php:6
+msgid "Footer Socials"
+msgstr "Közösségi Lábrész"
+
+#: inc/customize-configs/options-page.php:129
+#: inc/customize-configs/options-page.php:154
+msgid "Right"
+msgstr "Jobb"
+
+#: inc/customize-configs/options-page.php:128
+#: inc/customize-configs/options-page.php:153
+msgid "Left"
+msgstr "Bal"
+
+#: inc/customize-configs/options-page.php:130
+#: inc/customize-configs/options-page.php:152
+msgid "Center"
+msgstr "Középső"
+
+#: inc/customize-configs/options-page.php:83
+msgid "Color"
+msgstr "Szín"
+
+#: inc/customize-configs/options-page.php:65
+msgid "The page cover padding bottom in percent (%)."
+msgstr "Az oldalsó borító alsó része százalékban (%)."
+
+#: inc/customize-configs/options-page.php:64
+msgid "Padding Bottom"
+msgstr "Gomb Kitöltése"
+
+#: inc/customize-configs/options-page.php:48
+msgid "The page cover padding top in percent (%)."
+msgstr "Az oldal teteje kitöltése százalékban (%)."
+
+#: inc/customize-configs/options-page.php:47
+msgid "Padding Top"
+msgstr "Felső Kitöltés"
+
+#: inc/customize-configs/options-page.php:32
+msgid "Check this box to disable the page title bar on all pages."
+msgstr "Jelölje be ezt a négyzetet, ha letiltja az oldal címsorát minden oldalon."
+
+#: inc/customize-configs/options-page.php:30
+msgid "Disable Page Title bar?"
+msgstr "Letiltja a Cím címsorát?"
+
+#: inc/customize-configs/options-page.php:12
+msgid "Page Title Area"
+msgstr "Az oldal Címterülete"
+
+#: inc/customize-configs/options-navigation.php:22
+msgid "Padding left and right for Navigation items (pixels)."
+msgstr "A navigációs elemek (képpontok) bal és jobb feltöltése."
+
+#: inc/customize-configs/options-navigation.php:21
+msgid "Menu Item Padding"
+msgstr "Menüelem Kitöltése"
+
+#: inc/customize-configs/options-navigation.php:7
+msgid "Navigation"
+msgstr "Navigáció"
+
+#: inc/customize-configs/options-header.php:382
+msgid "Transparent Site Tagline Color"
+msgstr "Átlátszó Webcímke Szín"
+
+#: inc/customize-configs/options-header.php:363
+msgid "Transparent Site Title Color"
+msgstr "Átlátszó Oldalcím Szín"
+
+#: inc/customize-configs/options-header.php:325
+msgid "Transparent Retina Logo"
+msgstr "Átlátszó Retina Logó"
+
+#: inc/customize-configs/options-header.php:306
+#: inc/customize-configs/options-header.php:326
+msgid "Only apply when transparent header option is checked."
+msgstr "Csak akkor alkalmazható, ha az átlátszó fejléc opció be van jelölve."
+
+#: inc/customize-configs/options-header.php:304
+msgid "Transparent Logo"
+msgstr "Átlátszó Logó"
+
+#: inc/customize-configs/options-header.php:60
+msgid "Below Hero Slider"
+msgstr "A Hero Csúszka alatt"
+
+#: inc/customize-configs/options-header.php:59
+msgid "Top"
+msgstr "Felső"
+
+#: inc/customize-configs/options-header.php:56
+msgid "Header Position"
+msgstr "Fejléc Pozíció"
+
+#: inc/customize-configs/options-header.php:36
+msgid "Contained"
+msgstr "Foglalt"
+
+#: inc/customize-configs/options-header.php:32
+msgid "Header Width"
+msgstr "Fejrész Szélesség"
+
+#: inc/customize-configs/options-global.php:83
+msgid "Check this if you want to disable default google fonts in theme."
+msgstr "Ellenőrizze ezt, ha letiltja az alapértelmezett google betűtípusokat a témában."
+
+#: inc/customize-configs/options-global.php:81
+msgid "Disable Google Fonts"
+msgstr "Letiltja a Google Betűtípusokat"
+
+#: inc/customize-configs/site-identity.php:70
+msgid "Logo Height In Pixel"
+msgstr "Logó Magasság a pixelben"
+
+#: inc/customize-configs/site-identity.php:52
+msgid "Retina Logo"
+msgstr "Retina Logó"
+
+#: inc/customize-controls/control-category.php:28
+msgid "All"
+msgstr "Összes"
+
+#: functions.php:196
+msgid "Footer %s"
+msgstr "Lábrész %s"
+
+#: comments.php:32
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr "Egy gondolat &ldquo;%2$s&rdquo;"
+
+#: inc/customize-configs/options-single.php:79
+msgid "Check this box to show single post meta such as post date, author, category,..."
+msgstr "Jelölje be ezt a jelölőnégyzetet, ha meg szeretné jeleníteni az egyszeri bejegyzést, például a dátumot, a szerzőt, a kategóriát ..."
+
+#: inc/customize-configs/options-single.php:77
+msgid "Show single post meta"
+msgstr "Egyetlen meta közzététele"
+
+#: inc/customize-configs/options-single.php:64
+msgid "Check this box to show post thumbnail on single post."
+msgstr "Jelölje be ezt a jelölőnégyzetet a postaládák beillesztéséhez egyetlen bejegyzésben. "
+
+#: inc/customize-configs/options-single.php:62
+msgid "Show single post thumbnail"
+msgstr "Az egyszemélyes bejegyzés index megjelenítése"
+
+#: inc/customize-configs/options-single.php:8
+msgid "Single Post"
+msgstr "Egyetlen Bejegyzés"
+
+#: inc/customize-configs/section-hero.php:203
+msgid "The amount of time in between slides, expressed as the number of milliseconds."
+msgstr "A diák között eltelt idő, milliszekundumszámmal kifejezve."
+
+#: inc/customize-configs/section-hero.php:202
+msgid "Slider duration speed"
+msgstr "Csúsztatás időtartamának sebessége"
+
+#: inc/customize-configs/section-hero.php:186
+msgid "This is the speed at which the image will fade in. Integers in milliseconds are accepted."
+msgstr "Ez az a sebesség, amelyen a kép elhalványul. Az egész milliszekundumban elfogadott számok elfogadottak."
+
+#: inc/customize-configs/section-hero.php:185
+msgid "Slider animation speed"
+msgstr "Animáció sebességének csúsztatása"
+
+#: inc/customize-configs/section-hero.php:167
+msgid "Text animation speed"
+msgstr "Szöveg Animációs Sebesség"
+
+#: inc/admin/dashboard.php:292
+msgid "Child theme uses it's own theme setting name, would you like to copy setting data from parent theme to this child theme?"
+msgstr "A gyermek téma a saját témabeállítási nevét használja, szeretné a beállítási adatokat a szülő témájából átmásolni a gyermek témájára?"
+
+#: inc/customizer.php:197
+msgid "Font Awesome"
+msgstr "Awesome Betűtípus"
+
+#: inc/customizer.php:193
+msgid "Search"
+msgstr "Keresés"
+
+#: inc/admin/dashboard.php:672
+msgid "Are you sure want to copy ?"
+msgstr "Biztosan másolni szeretne? "
+
+#: inc/admin/dashboard.php:331
+msgid "Recommend Plugins"
+msgstr "A bővítmények ajánlása"
+
+#: inc/admin/dashboard.php:311
+msgid "Copy now"
+msgstr "Másolás Most"
+
+#: inc/admin/dashboard.php:303
+msgid "To Theme"
+msgstr "A Témához"
+
+#: inc/admin/dashboard.php:297
+msgid "From Theme"
+msgstr "Téma alapján"
+
+#: inc/admin/dashboard.php:290
+msgid "You're using %1$s theme, It's a child theme of OnePress"
+msgstr "Használja a %1$s témát. Ez a OnePress gyermektémája"
+
+#: inc/admin/dashboard.php:740
+msgid "Details"
+msgstr "Részletek"
+
+#: inc/admin/dashboard.php:118
+msgid "Import Demo Data"
+msgstr "Demo Adatok Importálása"
+
+#: inc/admin/dashboard.php:118
+msgid "Save time by import our demo data, your website will be set up and ready to customize in minutes. %s"
+msgstr "A demóadatok importálásával időt takaríthat meg, a webhelye perceken belül testre szabható. %s"
+
+#: inc/customize-configs/section-gallery.php:366
+msgid "Read More Text"
+msgstr "További Szöveg Olvasása"
+
+#: section-parts/section-gallery.php:38
+#: inc/customize-configs/section-gallery.php:360
+msgid "View More"
+msgstr "Olvassa Tovább"
+
+#: inc/customize-configs/section-gallery.php:349
+msgid "Read More Link"
+msgstr "További Linkek"
+
+#: inc/customize-configs/options-global.php:31
+msgid "No sidebar"
+msgstr "Nincs Oldalsáv"
+
+#: inc/customize-configs/options-global.php:30
+msgid "Left sidebar"
+msgstr "Bal Oldalsáv"
+
+#: inc/customize-configs/options-global.php:29
+msgid "Right sidebar"
+msgstr "Jobb Oldalsáv"
+
+#: inc/customize-configs/options-global.php:26
+msgid "Site Layout, apply for all pages, exclude home page and custom page templates."
+msgstr "Webhely-elrendezés, minden oldalra érvényes, kizárja a kezdőlapot és az egyéni sablonokat."
+
+#: inc/customize-configs/options-global.php:25
+msgid "Site Layout"
+msgstr "Webhely Elrendezés"
+
+#: functions.php:111
+msgid "Famethemes Demo Importer"
+msgstr "Famethemes Demo Importer"
+
+#: functions.php:183
+msgid "WooCommerce Sidebar"
+msgstr "WooCommerce Oldalsáv"
+
+#: inc/customize-configs/section-services.php:120
+#: inc/customize-configs/section-about.php:120
+msgid "1 Column"
+msgstr "1 Oszlop"
+
+#: inc/customize-configs/section-gallery.php:313
+msgid "Enable Lightbox"
+msgstr "Lightbox Engedélyezése"
+
+#: inc/customize-configs/section-gallery.php:297
+msgid "Number items"
+msgstr "Számelemek"
+
+#: inc/customize-configs/section-gallery.php:270
+msgid "Layout columns"
+msgstr "Elrendezési oszlopok"
+
+#: inc/customize-configs/section-gallery.php:252
+msgid "Row Height"
+msgstr "Sor Magasság"
+
+#: inc/customize-configs/section-gallery.php:234
+msgid "Item Spacing"
+msgstr "Elem Távolság"
+
+#: inc/customize-configs/section-gallery.php:218
+msgid "Masonry"
+msgstr "Masonry"
+
+#: inc/customize-configs/section-gallery.php:217
+msgid "Justified"
+msgstr "Justified"
+
+#: inc/class-config.php:51 inc/customize-configs/section-gallery.php:216
+msgid "Slider"
+msgstr "Slider"
+
+#: inc/customize-configs/section-gallery.php:215
+msgid "Carousel"
+msgstr "Carousel"
+
+#: inc/customize-configs/section-gallery.php:214
+msgid "Grid"
+msgstr "Rács"
+
+#: inc/customize-configs/section-gallery.php:209
+msgid "Display"
+msgstr "Kijelző"
+
+#: inc/customize-configs/section-gallery.php:192
+msgid "Default, inside container"
+msgstr "Alapértelmezett, belső tároló"
+
+#: inc/customize-configs/options-footer.php:203
+#: inc/customize-configs/section-gallery.php:187
+msgid "Layout"
+msgstr "Elrendezés"
+
+#: inc/customize-configs/section-gallery.php:166
+msgid "Select Gallery Page"
+msgstr "Válassza a Galéria Oldalát"
+
+#: inc/customize-configs/section-gallery.php:147
+msgid "Page"
+msgstr "Oldal"
+
+#: inc/customize-configs/section-gallery.php:142
+msgid "Select Gallery Source"
+msgstr "Válassza a Galéria Forrás lehetőséget"
+
+#: section-parts/section-gallery.php:4 inc/class-config.php:142
+#: inc/customize-configs/section-gallery.php:68
+msgid "Gallery"
+msgstr "Galéria"
+
+#: section-parts/section-gallery.php:2
+#: inc/customize-configs/section-gallery.php:51
+msgid "gallery"
+msgstr "galéria"
+
+#: inc/class-config.php:141 inc/customize-configs/section-gallery.php:12
+msgid "Section: Gallery"
+msgstr "Szakasz: Galéria"
+
+#: inc/customize-configs/options-header.php:116
+msgid "Scroll to top when click to the site logo or site title, only apply on front page."
+msgstr "Görgessen a tetejére, ha az oldal logójára vagy webhelycímére kattint, csak az első oldalon jelenik meg."
+
+#: inc/admin/dashboard.php:652
+msgid "FameThemes Demo Importer"
+msgstr "FameThemes Demo Imprtálás"
+
+#: inc/admin/dashboard.php:651
+msgid "Hey."
+msgstr "Hé."
+
+#: inc/admin/dashboard.php:649
+msgid "%1$s you will need to install and activate the %2$s plugin first."
+msgstr "%1$s telepítenie kell és aktiválni kell a %2$s bővítményt először."
+
+#: inc/admin/dashboard.php:633 inc/admin/dashboard.php:720
+msgid "Active Now"
+msgstr "Most Aktív"
+
+#: inc/admin/dashboard.php:611 inc/admin/dashboard.php:698
+msgid "Install Now"
+msgstr "Telepítés Most"
+
+#: inc/customize-configs/section-hero.php:519
+msgid "Button #2 style"
+msgstr "Gomb #2 stílus"
+
+#: inc/customize-configs/section-news.php:297
+msgid "More News Button Text"
+msgstr "További Hírek Gomb Szöveg"
+
+#: inc/customize-configs/section-news.php:268
+msgid "It should be your blog page link."
+msgstr "Ez legyen a blog oldal linkje. "
+
+#: inc/customize-configs/section-hero.php:464
+#: inc/customize-configs/section-hero.php:530
+msgid "Danger"
+msgstr "Veszély"
+
+#: inc/customize-configs/section-hero.php:463
+#: inc/customize-configs/section-hero.php:529
+msgid "Warning"
+msgstr "Figyelem"
+
+#: inc/customize-configs/section-hero.php:462
+#: inc/customize-configs/section-hero.php:528
+msgid "Info"
+msgstr "Infó"
+
+#: inc/customize-configs/section-hero.php:461
+#: inc/customize-configs/section-hero.php:527
+msgid "Success"
+msgstr "Siker"
+
+#: inc/customize-configs/section-hero.php:460
+#: inc/customize-configs/section-hero.php:526
+msgid "Primary"
+msgstr "Elsődleges"
+
+#: inc/customize-configs/section-hero.php:459
+#: inc/customize-configs/section-hero.php:525
+msgid "Button"
+msgstr "Gomb"
+
+#: inc/customize-configs/section-hero.php:458
+#: inc/customize-configs/section-hero.php:524
+msgid "Button Secondary"
+msgstr "Másodlagos Gomb"
+
+#: inc/customize-configs/section-hero.php:457
+#: inc/customize-configs/section-hero.php:523
+msgid "Button Primary"
+msgstr "Elsődleges Gomb"
+
+#: inc/customize-configs/section-hero.php:453
+msgid "Button #1 style"
+msgstr "Gomb #1 stílus"
+
+#: inc/customize-configs/section-hero.php:113
+msgid "The hero content padding bottom in percent (%)."
+msgstr "A hero tartalom százalékban (%)."
+
+#: inc/customize-configs/section-hero.php:97
+msgid "The hero content padding top in percent (%)."
+msgstr "A hero tartalmának kitöltése százalékban (%)."
+
+#: inc/customize-configs/section-hero.php:168
+msgid "The delay between the changing of each phrase in milliseconds."
+msgstr "Az egyes mondatok milliszekundumában bekövetkező változások közötti késés."
+
+#: inc/customize-configs/site-identity.php:32
+msgid "Hide site tagline"
+msgstr "A weboldal címsorának elrejtése"
+
+#: inc/customize-configs/site-identity.php:17
+msgid "Hide site title"
+msgstr "A webhely címe elrejtése"
+
+#: inc/customize-configs/section-services.php:165
+#: inc/customize-configs/section-features.php:167
+msgid "image"
+msgstr "Kép"
+
+#: inc/customize-configs/section-hero.php:148
+msgid "Text animation"
+msgstr "Szöveg animáció"
+
+#: inc/admin/dashboard.php:87
+msgid "OnePress Theme %s"
+msgstr "OnePress Téma %s"
+
+#: inc/admin/dashboard.php:85
+msgid "%1$s action required"
+msgid_plural "%1$s actions required"
+msgstr[0] "%1$s cselekvést kíván"
+msgstr[1] "%1$s cselekvéseket kíván"
+
+#: inc/customize-configs/options.php:26 inc/customize-configs/options.php:44
+msgid "Custom CSS"
+msgstr "Saját CSS"
+
+#: section-parts/section-features.php:5
+msgid "Why choose Us"
+msgstr "Miért válasszon Minket"
+
+#: inc/customize-configs/section-services.php:112
+msgid "Services Layout Settings"
+msgstr "Szolgáltatások Elrendezési Beállításai"
+
+#: inc/customize-configs/section-team.php:161
+#: inc/customize-configs/section-features.php:185
+#: inc/customize-configs/section-news.php:267
+msgid "Custom Link"
+msgstr "Egyedi hivatkozás"
+
+#: inc/customize-configs/section-features.php:181
+msgid "Description"
+msgstr "leírása"
+
+#: inc/customize-configs/section-features.php:150
+msgid "Features content"
+msgstr "A tartalom jellemzői"
+
+#: inc/customize-configs/section-features.php:111
+msgid "Features Layout Setting"
+msgstr "Elrendezési beállítások"
+
+#: section-parts/section-features.php:4 inc/class-config.php:136
+#: inc/customize-configs/section-features.php:58
+msgid "Features"
+msgstr "Szolgáltatások"
+
+#: section-parts/section-features.php:2
+#: inc/customize-configs/section-features.php:43
+msgid "features"
+msgstr "jellemzők"
+
+#: inc/class-config.php:135 inc/customize-configs/section-features.php:8
+msgid "Section: Features"
+msgstr "Szakasz: Jellemzők"
+
+#: inc/customize-configs/section-contact.php:95
+#: inc/customize-configs/section-counter.php:94
+#: inc/customize-configs/section-team.php:94
+#: inc/customize-configs/section-services.php:95
+#: inc/customize-configs/section-gallery.php:110
+#: inc/customize-configs/section-about.php:95
+#: inc/customize-configs/section-features.php:95
+#: inc/customize-configs/section-news.php:95
+msgid "Section Description"
+msgstr "Szekció Leírás"
+
+#: inc/customize-configs/section-services.php:174
+#: inc/customize-configs/section-hero.php:581
+#: inc/customize-configs/section-features.php:176
+msgid "Image"
+msgstr "Kép"
+
+#: inc/customize-configs/section-hero.php:563
+msgid "Content Text"
+msgstr "Tartalom szövege"
+
+#: inc/customize-configs/section-hero.php:343
+msgid "Layout 2"
+msgstr "Elrendezés 2"
+
+#: inc/customize-configs/section-hero.php:342
+msgid "Layout 1"
+msgstr "Elrendezés 1"
+
+#: inc/customize-configs/section-hero.php:337
+msgid "Display Layout"
+msgstr "Megjelenítési elrendezés"
+
+#: inc/customize-configs/options-footer.php:89
+msgid "URL"
+msgstr "URL"
+
+#: inc/customize-configs/options-footer.php:85
+#: inc/customize-configs/section-services.php:164
+#: inc/customize-configs/section-services.php:169
+#: inc/customize-configs/section-features.php:166
+#: inc/customize-configs/section-features.php:171
+msgid "Icon"
+msgstr "Ikon"
+
+#: inc/customize-configs/options-footer.php:81
+msgid "Social network"
+msgstr "Közösségi háló"
+
+#: inc/customize-configs/options-footer.php:72
+msgid "Socials"
+msgstr "Közösségi"
+
+#: inc/customize-configs/options-header.php:286
+msgid "Apply for front page template only."
+msgstr "Csak az elülső oldal sablont alkalmazza."
+
+#: inc/customize-configs/options-header.php:284
+msgid "Header Transparent"
+msgstr "Átlátszó Fejléc"
+
+#: inc/template-tags.php:1792
+msgid "Subscribe"
+msgstr "Feliratkozás"
+
+#: inc/template-tags.php:1791
+msgid "Enter your e-mail address"
+msgstr "Írja be az email címét"
+
+#: inc/admin/dashboard.php:270
+msgid "Support for %s WordPress theme is conducted through FameThemes support ticket system."
+msgstr "A %s WordPress téma támogatása a FameThemes támogatási jegyrendszere."
+
+#: inc/admin/dashboard.php:264
+msgid "OnePress Documentation"
+msgstr "OnePress Documentáció"
+
+#: inc/customize-configs/section-team.php:117
+#: inc/customize-configs/section-services.php:119
+#: inc/customize-configs/section-about.php:119
+#: inc/customize-configs/section-features.php:118
+msgid "2 Columns"
+msgstr "2 oszlop"
+
+#: inc/customize-configs/section-team.php:116
+#: inc/customize-configs/section-services.php:118
+#: inc/customize-configs/section-about.php:118
+#: inc/customize-configs/section-features.php:117
+msgid "3 Columns"
+msgstr "3 oszlop"
+
+#: inc/customize-configs/section-team.php:115
+#: inc/customize-configs/section-services.php:117
+#: inc/customize-configs/section-about.php:117
+#: inc/customize-configs/section-features.php:116
+msgid "4 Columns"
+msgstr "4 oszlop"
+
+#: inc/customize-configs/section-team.php:110
+msgid "Team Layout Settings"
+msgstr "Csapatelrendezési beállítások"
+
+#: inc/customize-configs/section-services.php:235
+#: inc/customize-configs/section-about.php:196
+#: inc/customize-configs/section-features.php:210
+msgid "Page Excerpt"
+msgstr "Oldal kivonat"
+
+#: inc/customize-configs/section-services.php:234
+#: inc/customize-configs/section-about.php:195
+#: inc/customize-configs/section-features.php:209
+msgid "Full Page Content"
+msgstr "Teljes oldal tartalma"
+
+#: inc/customize-configs/section-services.php:229
+#: inc/customize-configs/section-about.php:190
+#: inc/customize-configs/section-features.php:204
+msgid "Item content source"
+msgstr "Elem tartalomforrása"
+
+#: inc/customize-configs/section-about.php:153
+msgid "About content page"
+msgstr "A tartalom oldalról"
+
+#: inc/customize-configs/section-hero.php:293
+msgid "Enable parallax effect (apply for first BG image only)"
+msgstr "Parallax effekt engedélyezése (csak az első BG kép esetén alkalmazható)"
+
+#: inc/customize-configs/options-header.php:99
+msgid "If you use logo and your logo is too tall, check this box to auto vertical align menu."
+msgstr "Ha logót használ és a logója túl magas, jelölje be ezt a négyzetet az automatikus függőleges igazítás menühöz."
+
+#: inc/customize-configs/options-header.php:97
+msgid "Center vertical align for menu"
+msgstr "A menü függőleges középre állítása"
+
+#: inc/customize-configs/options-header.php:262
+msgid "Responsive Menu Button Color"
+msgstr "Érzékeny menügomb Szín"
+
+#: inc/customize-configs/options-header.php:241
+msgid "Menu Link Hover/Active BG Color"
+msgstr "Menu Link Hover/Aktív BG szín"
+
+#: inc/customize-configs/options-header.php:219
+msgid "Menu Link Hover/Active Color"
+msgstr "Menu Link Hover/Aktív Szín"
+
+#: inc/customize-configs/options-header.php:198
+msgid "Menu Link Color"
+msgstr "Menü Link Szín"
+
+#: inc/customize-configs/options-header.php:159
+msgid "Only set if you don't use an image logo."
+msgstr "Csak akkor állítsa be, ha nem használ egy képlogót. "
+
+#: inc/customize-configs/options-header.php:157
+msgid "Site Title Color"
+msgstr "Honlap címsor címe"
+
+#: inc/customize-configs/options-footer.php:270
+#: inc/customize-configs/options-header.php:135
+msgid "Background Color"
+msgstr "Háttér Szín"
+
+#: inc/customize-configs/options-header.php:12
+msgid "Header"
+msgstr "Fejléc"
+
+#: inc/customize-configs/options-colors.php:28
+msgid "Primary Color"
+msgstr "Elsődleges Szín"
+
+#: inc/customize-configs/options-colors.php:9
+msgid "Site Colors"
+msgstr "A webhely színei"
+
+#: inc/customize-configs/section-team.php:156
+msgid "User media"
+msgstr "Felhasználói média"
+
+#: inc/customize-configs/section-videolightbox.php:98
+msgid "Background image"
+msgstr "Háttér-kép"
+
+#: inc/customize-configs/section-videolightbox.php:83
+msgid "Paste Youtube or Vimeo url here"
+msgstr "A Youtube vagy a Vimeo url beillesztése itt"
+
+#: inc/customize-configs/section-videolightbox.php:81
+msgid "Video url"
+msgstr "Videó url"
+
+#: inc/customize-configs/section-videolightbox.php:66
+msgid "Section heading"
+msgstr "Szakaszcím"
+
+#: inc/class-config.php:165 inc/customize-configs/section-videolightbox.php:8
+msgid "Section: Video Lightbox"
+msgstr "Szakasz: Videó Lightbox"
+
+#: inc/admin/dashboard.php:394
+msgid "Hooray! There are no required actions for you right now."
+msgstr "Hurrá! Jelenleg nincsenek szükséges lépések az Ön számára."
+
+#: inc/admin/dashboard.php:384
+msgid "Change homepage page template"
+msgstr "A kezdőlap sablonjának módosítása"
+
+#: inc/admin/dashboard.php:370
+msgid "In order to change homepage section contents, you will need to set template \"Frontpage\" for your homepage."
+msgstr "A kezdőlap tartalmának megváltoztatásához meg kell adnia a \"kezdőlap\" sablont."
+
+#: inc/admin/dashboard.php:367
+msgid "Set your homepage page template to \"Frontpage\"."
+msgstr "Állítsa be a kezdőlap sablont a \"Címoldal\"-ra."
+
+#: inc/admin/dashboard.php:353 inc/admin/dashboard.php:377
+msgid "Setup front page displays"
+msgstr "Megjelenik az előlap beállítása"
+
+#: inc/admin/dashboard.php:350
+msgid "In order to have the one page look for your website, please go to Customize -&gt; Static Front Page and switch \"Front page displays\" to \"A static page\"."
+msgstr "Annak érdekében, hogy az egyik oldal megkeresse webhelyét, kérjük, menjen a Testreszabás -&gt; Static Front Page és a \"Front page\" felirat jelenik meg a \"Static page\" oldalon."
+
+#: inc/admin/dashboard.php:348
+msgid "Switch \"Front page displays\" to \"A static page\""
+msgstr "Kapcsolja az \"Címoldal megjelenítését\" a \"Statikus oldalra\""
+
+#: inc/admin/dashboard.php:341 inc/admin/dashboard.php:360
+msgid "Dismiss"
+msgstr "Figyelmen kívül hagy"
+
+#: inc/admin/dashboard.php:227
+msgid "Welcome to OnePress - Version %1s"
+msgstr "Üdvözöljük a OnePress oldalon - Verzió %1s"
+
+#: inc/admin/dashboard.php:109
+msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
+msgstr "Üdvözöljük! Köszönjük, hogy %1$s-t választotta! Annak érdekében, hogy teljes mértékben kihasználhassa a legjobb témánk által kínált előnyöket, kérjük, győződjön meg róla, hogy meglátogatja <a href=\"%2$s\"> Üdvözlő oldalunkat</a>"
+
+#: inc/admin/dashboard.php:89
+msgid "OnePress Theme"
+msgstr "OnePress Téma"
+
+#: inc/admin/dashboard.php:92
+msgid "OnePress Dashboard"
+msgstr "OnePress Irányítópult"
+
+#: inc/customize-configs/options-page.php:102
+#: inc/customize-configs/section-hero.php:274
+msgid "Background Overlay Color"
+msgstr "Háttérfedél színe"
+
+#: inc/customize-configs/section-upsell.php:13
+msgid "Section Order & Styling"
+msgstr "Szekció sorrend & stílusa"
+
+#: inc/customize-configs/options-header.php:80
+msgid "Check this box to disable sticky header when scroll."
+msgstr "Jelölje be ezt a négyzetet a ragadós fejléc letiltásához"
+
+#: inc/customize-configs/options-header.php:78
+msgid "Disable Sticky Header?"
+msgstr "Letiltja a tapadós fejlécet?"
+
+#. Template Name of the theme
+#: inc/customize-configs/options-single.php:29
+msgid "Left Sidebar"
+msgstr "Bal oldalsáv"
+
+#: inc/customize-configs/section-gallery.php:193
+#: inc/customize-configs/options-header.php:35
+msgid "Full Width"
+msgstr "Teljes szélesség"
+
+#: template-parts/content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Úgy tűnik, nem találtuk meg amit kerestünk. :) Talán, egy újabb keresés segíthetne..."
+
+#: template-parts/content-none.php:22
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Elnézést, nem találunk a keresési feltételekhez igazodó eredményt. Másik kulcsszóval, kifejezéssel újra kellene kezdeni egy keresést."
+
+#: template-parts/content-none.php:18
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Készen állunk közzétenni az első bejegyzésünket? <a href=\"%1$s\">Lássunk hozzá!</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nincs találat"
+
+#: template-parts/content-list.php:78 template-parts/content-page.php:21
+#: template-parts/content.php:47 template-parts/content-single.php:35
+msgid "Pages:"
+msgstr "Oldal:"
+
+#: section-parts/section-hero.php:94
+msgid "#services"
+msgstr "#szolgáltatások"
+
+#: section-parts/section-contact.php:52
+msgid "You can install %1$s plugin and go to Customizer &rarr; Section: Contact &rarr; Section Content to show a working contact form here."
+msgstr "Telepítheti a %1$s  bővítményt, és menjen a Beállítás &rarr; Szakasz: Kapcsolat &rarr; A szekció tartalma itt jelenik meg a munkakapcsolati űrlapon."
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "%s kifejezésre történő keresés eredménye"
+
+#: inc/template-tags.php:497
+msgid "Your comment is awaiting moderation."
+msgstr "A hozzászólás moderációra várakozik."
+
+#: inc/template-tags.php:492
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: inc/template-tags.php:485
+msgid "Reply"
+msgstr "Válasz a bejegyzésre"
+
+#: inc/template-tags.php:472
+msgid "Post author"
+msgstr "Szerző"
+
+#: inc/template-tags.php:452
+msgid "(Edit)"
+msgstr "(Szekresztés)"
+
+#: inc/template-tags.php:452
+msgid "Pingback:"
+msgstr "Visszakövetések:"
+
+#: inc/template-tags.php:370
+msgid "% Comments"
+msgstr "% hozzászólás"
+
+#: inc/template-tags.php:370
+msgid "1 Comment"
+msgstr "1 hozzászólás"
+
+#: inc/template-tags.php:370
+msgid "Leave a comment"
+msgstr "Szóljon hozzá"
+
+#: inc/template-tags.php:364
+msgid "Tagged %1$s"
+msgstr "Címkék: %1$s"
+
+#: inc/template-tags.php:358
+msgid "Posted in %1$s"
+msgstr "Kategória: %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:356 inc/template-tags.php:362
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:336
+msgctxt "post author"
+msgid "by %s"
+msgstr "%s írta"
+
+#: inc/template-tags.php:331
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "%s a bejegyzés dátuma"
+
+#: inc/admin/dashboard.php:269
+msgid "Having Trouble, Need Support?"
+msgstr "Miután bajban van, szükség van a támogatásra?"
+
+#: inc/admin/dashboard.php:262
+msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
+msgstr "Segítségre van szüksége a %s beállításához és konfigurálásához? Kérjük, nézze meg dokumentációs utasításainkat."
+
+#: inc/admin/dashboard.php:261
+msgid "Theme Documentation"
+msgstr "Téma Dokumentáció"
+
+#: inc/admin/dashboard.php:257
+msgid "Start Customize"
+msgstr "Indítsa el a Testreszabás lehetőséget"
+
+#: inc/admin/dashboard.php:255
+msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
+msgstr "A %s támogatja a téma-testreszabást minden téma beállításhoz. Kattintson a \"Testreszabás\" gombra a webhely személyre szabásához."
+
+#: inc/admin/dashboard.php:254
+msgid "Theme Customizer"
+msgstr "Téma Testreszabás"
+
+#: inc/admin/dashboard.php:228
+msgid "OnePress is a creative and flexible WordPress ONE PAGE theme well suited for business, portfolio, digital agency, product showcase, freelancers websites."
+msgstr "A OnePress egy kreatív és rugalmas WordPress ONE PAGE téma, amely jól alkalmazható az üzleti, portfolió, digitális ügynökségek, termékbemutatók, szabadúszó weboldalak számára."
+
+#: inc/customize-configs/section-contact.php:253
+msgid "Fax"
+msgstr "Fax"
+
+#: inc/customize-configs/section-contact.php:238
+msgid "Email"
+msgstr "Email címed"
+
+#: inc/customize-configs/section-contact.php:223
+msgid "Phone"
+msgstr "Telefonszám"
+
+#: inc/customize-configs/section-contact.php:208
+msgid "Address"
+msgstr "Cégnév"
+
+#: inc/customize-configs/section-contact.php:193
+msgid "Contact Box Title"
+msgstr "Kapcsolatfelvételi Cìm"
+
+#: inc/customize-configs/section-contact.php:169
+msgid "Contact Text"
+msgstr "Kapcsolat Szövege"
+
+#: inc/customize-configs/section-contact.php:154
+msgid "Check this box to hide contact form."
+msgstr "Jelölje be ezt a négyzetet a névjegy űrlap elrejtéséhez."
+
+#: inc/customize-configs/section-contact.php:152
+msgid "Hide contact form completely."
+msgstr "A kapcsolatfelvételi űrlap teljes elrejtése."
+
+#: inc/customize-configs/section-contact.php:136
+msgid "Contact Form Shortcode."
+msgstr "Az űrlap rövidített kódja."
+
+#: section-parts/section-contact.php:4 inc/class-config.php:123
+#: inc/customize-configs/section-contact.php:58
+msgid "Get in touch"
+msgstr "Felveszi a kapcsolatot"
+
+#: section-parts/section-contact.php:2
+#: inc/customize-configs/section-contact.php:43
+msgid "contact"
+msgstr "kapcsolat"
+
+#: inc/class-config.php:122 inc/customize-configs/section-contact.php:8
+msgid "Section: Contact"
+msgstr "Szakasz: Kapcsolat"
+
+#: section-parts/section-news.php:16 inc/customize-configs/section-news.php:292
+msgid "Read Our Blog"
+msgstr "Olvassa el Blogunkat"
+
+#: inc/customize-configs/section-news.php:183
+msgid "Number of post to show"
+msgstr "A megjelenítendő bejegyzések száma"
+
+#: section-parts/section-news.php:11 inc/class-config.php:148
+#: inc/customize-configs/section-news.php:58
+msgid "Latest News"
+msgstr "Legfrissebb hírek"
+
+#: section-parts/section-news.php:2 inc/customize-configs/section-news.php:43
+msgid "news"
+msgstr "hírek"
+
+#: inc/class-config.php:147 inc/customize-configs/section-news.php:8
+msgid "Section: News"
+msgstr "Szakasz: Hírek"
+
+#: inc/customize-configs/section-team.php:147
+msgid "Team members"
+msgstr "Csapattagok"
+
+#: section-parts/section-team.php:4 inc/class-config.php:160
+#: inc/customize-configs/section-team.php:57
+msgid "Our Team"
+msgstr "Csapatunk"
+
+#: section-parts/section-team.php:2 inc/customize-configs/section-team.php:42
+msgid "team"
+msgstr "csapat"
+
+#: inc/class-config.php:159 inc/customize-configs/section-team.php:8
+msgid "Section: Team"
+msgstr "Szakasz: Csapat"
+
+#: inc/customize-configs/section-counter.php:150
+msgid "After number"
+msgstr "Szám után"
+
+#: inc/customize-configs/section-counter.php:145
+msgid "Before number"
+msgstr "Szám előtt"
+
+#: inc/customize-configs/section-counter.php:140
+msgid "Number"
+msgstr "Szám"
+
+#: inc/customize-configs/section-counter.php:137
+msgid "Your counter label"
+msgstr "A számlálója címkéje"
+
+#: inc/customize-configs/section-counter.php:134
+#: inc/customize-configs/section-features.php:159
+#: inc/customize-configs/section-news.php:223
+msgid "Title"
+msgstr "Címke"
+
+#: inc/customize-configs/section-counter.php:125
+msgid "Counter content"
+msgstr "Számláló tartalom"
+
+#: section-parts/section-counter.php:4 inc/class-config.php:130
+#: inc/customize-configs/section-counter.php:57
+msgid "Our Numbers"
+msgstr "Számaink"
+
+#: section-parts/section-counter.php:2
+#: inc/customize-configs/section-counter.php:42
+msgid "counter"
+msgstr "számláló"
+
+#: inc/class-config.php:129 inc/customize-configs/section-counter.php:8
+msgid "Section: Counter"
+msgstr "Szakasz: Számláló"
+
+#: inc/customize-configs/section-services.php:161
+#: inc/customize-configs/section-features.php:163
+msgid "Custom icon"
+msgstr "Egyéni ikon"
+
+#: inc/customize-configs/section-services.php:152
+msgid "Service content"
+msgstr "Szolgáltatási tartalom"
+
+#: section-parts/section-services.php:4 section-parts/section-hero.php:93
+#: inc/class-config.php:154 inc/customize-configs/section-services.php:58
+msgid "Our Services"
+msgstr "Szolgáltatásaink"
+
+#: section-parts/section-services.php:2
+#: inc/customize-configs/section-services.php:43
+msgid "services"
+msgstr "szolgáltatások"
+
+#: inc/class-config.php:153 inc/customize-configs/section-services.php:8
+msgid "Section: Services"
+msgstr "Szakasz: Szolgáltatások"
+
+#: inc/customize-configs/section-services.php:185
+#: inc/customize-configs/section-about.php:171
+msgid "Link to single page"
+msgstr "Egyetlen oldalra mutató link"
+
+#: inc/customize-configs/section-about.php:167
+msgid "Hide item title"
+msgstr "Elemcím elrejtése"
+
+#: inc/customize-configs/section-services.php:180
+#: inc/customize-configs/section-about.php:162
+msgid "Select a page"
+msgstr "Oldal kiválasztása"
+
+#: inc/customize-configs/section-counter.php:129
+#: inc/customize-configs/options-footer.php:76
+#: inc/customize-configs/section-team.php:151
+#: inc/customize-configs/section-services.php:156
+#: inc/customize-configs/section-about.php:157
+#: inc/customize-configs/section-features.php:154
+msgid "[live_title]"
+msgstr "[live_title]"
+
+#: inc/customize-configs/section-contact.php:108
+#: inc/customize-configs/section-counter.php:105
+#: inc/customize-configs/section-team.php:127
+#: inc/customize-configs/section-services.php:132
+#: inc/customize-configs/section-gallery.php:125
+#: inc/customize-configs/section-about.php:132
+#: inc/customize-configs/section-features.php:130
+msgid "Section Content"
+msgstr "Szakasz tartalom"
+
+#: inc/customize-configs/section-contact.php:78
+#: inc/customize-configs/section-counter.php:77
+#: inc/customize-configs/section-team.php:77
+#: inc/customize-configs/section-services.php:78
+#: inc/customize-configs/section-gallery.php:91
+#: inc/customize-configs/section-about.php:78
+#: inc/customize-configs/section-features.php:78
+#: inc/customize-configs/section-news.php:78
+msgid "Section Subtitle"
+msgstr "Szakasz Alcím"
+
+#: section-parts/section-contact.php:5 section-parts/section-counter.php:5
+#: section-parts/section-team.php:5 section-parts/section-services.php:5
+#: section-parts/section-gallery.php:5 section-parts/section-about.php:5
+#: section-parts/section-news.php:12
+#: inc/customize-configs/section-contact.php:73
+#: inc/customize-configs/section-counter.php:72
+#: inc/customize-configs/section-team.php:72
+#: inc/customize-configs/section-services.php:73
+#: inc/customize-configs/section-gallery.php:85
+#: inc/customize-configs/section-about.php:73
+#: inc/customize-configs/section-features.php:73
+#: inc/customize-configs/section-news.php:73
+msgid "Section subtitle"
+msgstr "Szakasz alcím"
+
+#: inc/customize-configs/section-contact.php:63
+#: inc/customize-configs/section-counter.php:62
+#: inc/customize-configs/section-team.php:62
+#: inc/customize-configs/section-services.php:63
+#: inc/customize-configs/section-gallery.php:74
+#: inc/customize-configs/section-about.php:63
+#: inc/customize-configs/section-features.php:63
+#: inc/customize-configs/section-news.php:63
+msgid "Section Title"
+msgstr "Szakasz Cím"
+
+#: section-parts/section-about.php:2 inc/customize-configs/section-about.php:43
+msgid "about"
+msgstr "Névjegy"
+
+#: inc/customize-configs/section-contact.php:17
+#: inc/customize-configs/section-counter.php:17
+#: inc/customize-configs/section-team.php:17
+#: inc/customize-configs/section-services.php:17
+#: inc/customize-configs/section-gallery.php:22
+#: inc/customize-configs/section-about.php:17
+#: inc/customize-configs/section-features.php:17
+#: inc/customize-configs/section-videolightbox.php:17
+#: inc/customize-configs/section-news.php:17
+msgid "Section Settings"
+msgstr "Szakasz Beállítás"
+
+#: inc/class-config.php:116 inc/customize-configs/section-about.php:8
+msgid "Section: About"
+msgstr "Szakasz: ról"
+
+#: inc/customize-configs/section-hero.php:505
+msgid "Button #2 Link"
+msgstr "Gomb #2 Link"
+
+#: section-parts/section-hero.php:96 inc/customize-configs/section-hero.php:500
+msgid "#contact"
+msgstr "#kapcsolat"
+
+#: inc/customize-configs/section-hero.php:491
+msgid "Button #2 Text"
+msgstr "Gomb #2 Szöveg"
+
+#: section-parts/section-hero.php:95 inc/customize-configs/section-hero.php:486
+msgid "Get Started"
+msgstr "Vágjon bele"
+
+#: inc/customize-configs/section-hero.php:440
+msgid "Button #1 Link"
+msgstr "Gomb #1 Link"
+
+#: inc/customize-configs/section-hero.php:435
+msgid "#about"
+msgstr "#róla"
+
+#: inc/customize-configs/section-hero.php:426
+msgid "Button #1 Text"
+msgstr "Gomb #1 Szöveg"
+
+#: section-parts/section-about.php:4 inc/class-config.php:117
+#: inc/customize-configs/section-hero.php:421
+#: inc/customize-configs/section-about.php:58
+msgid "About Us"
+msgstr "Rólunk"
+
+#: inc/customize-configs/section-hero.php:413
+msgid "You can use text rotate slider in this textarea too."
+msgstr "A szöveges forgatható csúszkát ebben a szöveges mezőben használhatja. "
+
+#: inc/customize-configs/section-hero.php:410
+msgid "Small Text"
+msgstr "Kis szöveg"
+
+#: inc/customize-configs/section-hero.php:363
+msgid "Text Rotating Guide: Put your rotate texts separate by \"|\" into <span class=\"js-rotating\">...</span>, go to Customizer -> Theme Options -> Section: Hero -> Hero Settings to control rotate animation."
+msgstr "Szöveg forgó útmutató : Menjen a szövegéhez \"|\" into <span class=\"js-rotating\">...</span>, Testreszabáshoz -> Téma Opciók -> Szakasz: Hero -> Hero Beállítások az animáció forgatásának vezérléséhez."
+
+#: inc/customize-configs/section-hero.php:361
+msgid "Large Text"
+msgstr "Nagy szöveg"
+
+#: inc/customize-configs/section-hero.php:321
+msgid "Hero Content Layout"
+msgstr "Hero Tartalomelosztás"
+
+#: inc/customize-configs/section-hero.php:248
+msgid "Background Image"
+msgstr "Háttér-kép"
+
+#: inc/customize-configs/options-footer.php:160
+#: inc/customize-configs/options-footer.php:346
+#: inc/customize-configs/section-hero.php:243
+msgid "Background"
+msgstr "Background"
+
+#: inc/customize-configs/section-hero.php:239
+msgid "Background Images"
+msgstr "Háttér képek"
+
+#: inc/customize-configs/section-hero.php:213
+msgid "Hero Background Media"
+msgstr "Hero háttér média"
+
+#: inc/customize-configs/section-hero.php:111
+msgid "Padding Bottom:"
+msgstr "Kitöltött Gomb:"
+
+#: inc/customize-configs/section-hero.php:95
+msgid "Padding Top:"
+msgstr "Padding Top:"
+
+#: inc/customize-configs/section-hero.php:90
+#: inc/customize-configs/section-hero.php:106
+msgid "10"
+msgstr "10"
+
+#: inc/customize-configs/section-hero.php:67
+msgid "Check this box to make hero section full screen."
+msgstr "Jelölje be ezt a négyzetet, hogy a hero rész teljes képernyős legyen. "
+
+#: inc/customize-configs/section-hero.php:65
+msgid "Make hero section full screen"
+msgstr "A hero rész teljes képernyős megjelenítése"
+
+#: inc/customize-configs/section-contact.php:48
+#: inc/customize-configs/section-counter.php:47
+#: inc/customize-configs/section-team.php:47
+#: inc/customize-configs/section-services.php:48
+#: inc/customize-configs/section-hero.php:49
+#: inc/customize-configs/section-gallery.php:57
+#: inc/customize-configs/section-about.php:48
+#: inc/customize-configs/section-features.php:48
+#: inc/customize-configs/section-videolightbox.php:48
+#: inc/customize-configs/section-news.php:48
+msgid "Section ID:"
+msgstr "ID szakasz:"
+
+#: section-parts/section-hero.php:2 inc/customize-configs/section-hero.php:44
+msgid "hero"
+msgstr "hero"
+
+#: inc/customize-configs/section-contact.php:35
+#: inc/customize-configs/section-counter.php:34
+#: inc/customize-configs/section-team.php:35
+#: inc/customize-configs/section-services.php:35
+#: inc/customize-configs/section-hero.php:37
+#: inc/customize-configs/section-gallery.php:42
+#: inc/customize-configs/section-about.php:35
+#: inc/customize-configs/section-features.php:35
+#: inc/customize-configs/section-videolightbox.php:35
+#: inc/customize-configs/section-news.php:35
+msgid "Check this box to hide this section."
+msgstr "Jelölje be ezt a négyzetet a rész elrejtéséhez."
+
+#: inc/customize-configs/section-contact.php:33
+#: inc/customize-configs/section-counter.php:32
+#: inc/customize-configs/section-team.php:33
+#: inc/customize-configs/section-services.php:33
+#: inc/customize-configs/section-hero.php:35
+#: inc/customize-configs/section-gallery.php:40
+#: inc/customize-configs/section-about.php:33
+#: inc/customize-configs/section-features.php:33
+#: inc/customize-configs/section-videolightbox.php:33
+#: inc/customize-configs/section-news.php:33
+msgid "Hide this section?"
+msgstr "E rész elrejtése? "
+
+#: inc/customize-configs/section-hero.php:19
+msgid "Hero Settings"
+msgstr "Hero beállítások"
+
+#: inc/class-config.php:110 inc/customize-configs/section-hero.php:9
+msgid "Section: Hero"
+msgstr "Szakasz: Hero"
+
+#: inc/customize-configs/options-footer.php:145
+msgid "MailChimp Action URL"
+msgstr "MailChimp Action URL"
+
+#: inc/customize-configs/options-footer.php:129
+msgid "Newsletter Form Title"
+msgstr "Hírlevél űrlap címe"
+
+#: inc/customize-configs/options-footer.php:115
+msgid "Check this box to hide footer newsletter form."
+msgstr "Jelölje be ezt a négyzetet a lábléc hírlevél űrlapjának elrejtéséhez."
+
+#: inc/customize-configs/options-footer.php:113
+msgid "Hide Footer Newsletter?"
+msgstr "Lábrész hírlevél elrejtése?"
+
+#: inc/customize-configs/options-footer.php:52
+msgid "Social Footer Title"
+msgstr "Közösségi Lábrész Címe"
+
+#: inc/customize-configs/options-footer.php:38
+msgid "The social profiles specified below will be displayed in the footer of your site."
+msgstr "Az alább meghatározott közösségi profilok láthatók a webhely láblécében."
+
+#: inc/customize-configs/options-footer.php:25
+msgid "Check this box to hide footer social section."
+msgstr "Jelölje be ezt a négyzetet a lábléc közösségi részének elrejtéséhez."
+
+#: inc/customize-configs/options-footer.php:23
+msgid "Hide Footer Social?"
+msgstr "Közösségi Lábrész Elrejtése?"
+
+#: inc/customize-configs/options-global.php:66
+msgid "Check this box to hide footer back to top button."
+msgstr "Jelölje be ezt a négyzetet a lábléc visszaállításához."
+
+#: inc/customize-configs/options-global.php:64
+msgid "Hide footer back to top?"
+msgstr "A lábléc visszahelyezése felülre?"
+
+#: inc/customize-configs/options-global.php:49
+msgid "Check this box to disable all element animation when scroll."
+msgstr "Jelölje be ezt a négyzetet, ha letiltja az elemek összes animációját. "
+
+#: inc/customize-configs/options-global.php:47
+msgid "Disable animation effect?"
+msgstr "Az animációs hatás kikapcsolása?"
+
+#: inc/customize-configs/options-global.php:7
+msgid "Global"
+msgstr "Globális"
+
+#: inc/customize-configs/options.php:14
+msgid "Theme Options"
+msgstr "Sablon opciók"
+
+#: inc/customizer.php:71
+msgid "Select member"
+msgstr "Tag kiválasztása"
+
+#: inc/customizer.php:60
+msgid "Select page"
+msgstr "Oldal kiválasztása"
+
+#: inc/customize-controls/control-repeater.php:357
+msgid "Close"
+msgstr "Lezárva"
+
+#: inc/customize-controls/control-repeater.php:322
+msgid "Change"
+msgstr "Módosít"
+
+#: inc/customize-controls/control-repeater.php:322
+msgid "Add"
+msgstr "Létrehozás"
+
+#: inc/customize-controls/control-repeater.php:321
+#: inc/customize-controls/control-repeater.php:343
+#: inc/customize-controls/control-repeater.php:355
+msgid "Remove"
+msgstr "Eltávolít"
+
+#: inc/customize-controls/control-repeater.php:76
+#: inc/customize-controls/control-repeater.php:205
+msgid "Item"
+msgstr "Tétel"
+
+#: inc/customize-controls/control-repeater.php:190
+msgid "Add an item"
+msgstr "Egy elem hozzáadása"
+
+#: inc/template-tags.php:228
+msgid "Menu"
+msgstr "Menü"
+
+#: header.php:29
+msgid "Skip to content"
+msgstr "Tovább a tartalomhoz"
+
+#: functions.php:323
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr "rajta"
+
+#: functions.php:316
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "be"
+
+#: functions.php:170
+msgid "Sidebar"
+msgstr "Oldalsáv"
+
+#: functions.php:60
+msgid "Primary Menu"
+msgstr "Elsődleges menü"
+
+#: inc/template-tags.php:1515
+msgid "%1$s theme by %2$s"
+msgstr "%1$s téma %2$s által"
+
+#: inc/template-tags.php:1513
+msgid "Copyright %1$s %2$s %3$s"
+msgstr "Copyright %1$s %2$s %3$s"
+
+#: footer.php:44
+msgid "Back To Top"
+msgstr "Vissza a tetejére"
+
+#: inc/template-tags.php:1781 inc/customize-configs/options-footer.php:123
+msgid "Join our Newsletter"
+msgstr "Csatlakozzon hírlevelünkhöz"
+
+#: inc/template-tags.php:1800 inc/customize-configs/options-footer.php:46
+msgid "Keep Updated"
+msgstr "Maradjon Frissítve"
+
+#: comments.php:93
+msgid "Comments are closed."
+msgstr "Hozzászólás jelenleg nem lehetséges."
+
+#: comments.php:59 comments.php:81
+msgid "Newer Comments"
+msgstr "Újabb hozzászólás"
+
+#: comments.php:58 comments.php:80
+msgid "Older Comments"
+msgstr "Korábbi hozzászólás"
+
+#: comments.php:55 comments.php:77
+msgid "Comment navigation"
+msgstr "Hozzászólás navigáció"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo; bejegyzéshez %1$s hozzászólás"
+msgstr[1] "&ldquo;%2$s&rdquo; bejegyzéshez %1$s hozzászólás"
+
+#. translators: %1$s: smiley
+#: 404.php:51
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Próbáljuk megnézni a havi archívumokban. %1$s"
+
+#: 404.php:34
+msgid "Most Used Categories"
+msgstr "Legtöbbet használt kategóriák"
+
+#: 404.php:26
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "A keresett oldal vagy bejegyzés nem található. Próbálkozzunk meg az alábbi hivatkozásokkal vagy esetleg egy kereséssel."
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Elnézést, az oldal nem található"

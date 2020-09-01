@@ -3,7 +3,7 @@
 Plugin Name: GTranslate
 Plugin URI: https://gtranslate.io/?xyz=998
 Description: Makes your website <strong>multilingual</strong> and available to the world using Google Translate. For support visit <a href="https://wordpress.org/support/plugin/gtranslate">GTranslate Support</a>.
-Version: 2.8.57
+Version: 2.8.59
 Author: Translate AI Multilingual Solutions
 Author URI: https://gtranslate.io
 Text Domain: gtranslate
@@ -307,6 +307,7 @@ function RefreshDoWidgetCode() {
     var widget_look = jQuery('#widget_look').val();
     var default_language = jQuery('#default_language').val();
     var flag_size = jQuery('#flag_size').val();
+    var monochrome_flags = jQuery('#monochrome_flags:checked').length > 0 ? true : false;
     var pro_version = jQuery('#pro_version:checked').length > 0 ? true : false;
     var enterprise_version = jQuery('#enterprise_version:checked').length > 0 ? true : false;
     var new_window = jQuery('#new_window:checked').length > 0 ? true : false;
@@ -374,9 +375,9 @@ function RefreshDoWidgetCode() {
     }
 
     if(widget_look == 'dropdown' || widget_look == 'lang_names' || widget_look == 'lang_codes' || widget_look == 'globe') {
-        jQuery('#flag_size_option').hide();
+        jQuery('#flag_size_option,#flag_monochrome_option').hide();
     } else {
-        jQuery('#flag_size_option').show();
+        jQuery('#flag_size_option,#flag_monochrome_option').show();
     }
 
     if(widget_look == 'dropdown_with_flags') {
@@ -411,9 +412,10 @@ function RefreshDoWidgetCode() {
                     lang_name = gt_lang_array[lang];
 
                     var href = '#';
-                    if(pro_version)
+                    if(pro_version) {
                         href = (lang == default_language) ? '$site_url' : '$site_url'.replace('$site_url'.split('/').slice(0, 3).join('/'), '$site_url'.split('/').slice(0, 3).join('/')+'/'+lang);
-                    else if(enterprise_version)
+                        if(lang != default_language && href.endsWith('/'+lang)) href += '/';
+                    } else if(enterprise_version)
                         href = (lang == default_language) ? '$site_url' : '$site_url'.replace('$site_url'.split('/').slice(2, 3)[0].replace('www.', ''), lang + '.' + '$site_url'.split('/').slice(2, 3)[0].replace('www.', '')).replace('://www.', '://');
 
                     widget_preview += '<a href="'+href+'" onclick="doGTranslate(\''+default_language+'|'+lang+'\');return false;" title="'+lang_name+'" class="glink nturl notranslate">';
@@ -476,7 +478,7 @@ function RefreshDoWidgetCode() {
 
         // Adding onfly html and css
         if(translation_method == 'onfly') {
-            widget_code += '<style type="text/css">'+new_line;
+            widget_code += '<style>'+new_line;
             widget_code += "#goog-gt-tt {display:none !important;}"+new_line;
             widget_code += ".goog-te-banner-frame {display:none !important;}"+new_line;
             widget_code += ".goog-te-menu-value:hover {text-decoration:none !important;}"+new_line;
@@ -485,20 +487,24 @@ function RefreshDoWidgetCode() {
             widget_code += "#google_translate_element2 {display:none!important;}"+new_line;
             widget_code += '</style>'+new_line+new_line;
             widget_code += '<div id="google_translate_element2"></div>'+new_line;
-            widget_code += '<script type="text/javascript">'+new_line;
+            widget_code += '<script>'+new_line;
             widget_code += 'function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: \'';
             widget_code += default_language;
             widget_code += '\',autoDisplay: false';
             widget_code += "}, 'google_translate_element2');}"+new_line;
             widget_code += '<\/script>';
-            widget_code += '<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"><\/script>'+new_line;
+            widget_code += '<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"><\/script>'+new_line;
+        }
+
+        if(monochrome_flags && (widget_look == 'flags' || widget_look == 'flags_dropdown' || widget_look == 'flags_name' || widget_look == 'flags_code')) {
+            widget_preview += new_line+'<style>a.glink img {filter:grayscale(100%);-webkit-filter:grayscale(100%);}</style>'+new_line;
         }
 
         if(widget_look == 'globe') {
             widget_preview += '<span class="gsatelites"></span><span class="gglobe"></span>';
 
             // Adding css
-            widget_preview += '<style type="text/css">'+new_line;
+            widget_preview += '<style>'+new_line;
             widget_preview += '.gglobe {background-image:url($wp_plugin_url/gtglobe.svg);opacity:0.8;border-radius:50%;height:40px;width:40px;cursor:pointer;display:block;-moz-transition: all 0.3s;-webkit-transition: all 0.3s;transition: all 0.3s;}'+new_line;
             widget_preview += '.gglobe:hover {opacity:1;-moz-transform: scale(1.2);-webkit-transform: scale(1.2);transform: scale(1.2);}'+new_line;
             widget_preview += '.gsatelite {background-color:#777777;opacity:0.95;border-radius:50%;height:24px;width:24px;cursor:pointer;position:absolute;z-index:100000;display:none;-moz-transition: all 0.3s;-webkit-transition: all 0.3s;transition: all 0.3s;}'+new_line;
@@ -506,7 +512,7 @@ function RefreshDoWidgetCode() {
             widget_preview += '</style>'+new_line+new_line;
 
             // Adding javascript
-            widget_preview += '<script type="text/javascript">'+new_line;
+            widget_preview += '<script>'+new_line;
             widget_preview += "function renderGSatelites($, e) { $('.gsatelite').remove();"+new_line;
             widget_preview += "var centerPosition = $('.gglobe').position();"+new_line;
             widget_preview += "centerPosition.left += Math.floor($('.gglobe').width() / 2) - 10;"+new_line;
@@ -566,9 +572,10 @@ function RefreshDoWidgetCode() {
                     lang_name = gt_lang_array[lang];
 
                     var href = '#';
-                    if(pro_version)
+                    if(pro_version) {
                         href = (lang == default_language) ? '$site_url' : '$site_url'.replace('$site_url'.split('/').slice(0, 3).join('/'), '$site_url'.split('/').slice(0, 3).join('/')+'/'+lang);
-                    else if(enterprise_version)
+                        if(lang != default_language && href.endsWith('/'+lang)) href += '/';
+                    } else if(enterprise_version)
                         href = (lang == default_language) ? '$site_url' : '$site_url'.replace('$site_url'.split('/').slice(2, 3)[0].replace('www.', ''), lang + '.' + '$site_url'.split('/').slice(2, 3)[0].replace('www.', '')).replace('://www.', '://');
 
                     widget_preview += '<a href="'+href+'" onclick="changeGTLanguage(\''+default_language+'|'+lang+'\', this);return false;" title="'+lang_name+'" class="glink nturl'+(default_language == lang ? ' selected' : '')+'">';
@@ -624,7 +631,8 @@ function RefreshDoWidgetCode() {
                 popup_columns = 5;
 
             // style
-            widget_preview += '<style type="text/css">'+new_line;
+            widget_preview += '<style>'+new_line;
+            if(monochrome_flags) widget_preview += 'a.glink img {filter:grayscale(100%);-webkit-filter:grayscale(100%);}'+new_line;
             widget_preview += '.gt_black_overlay {display:none;position:fixed;top:0%;left:0%;width:100%;height:100%;background-color:black;z-index:2017;-moz-opacity:0.8;opacity:.80;filter:alpha(opacity=80);}'+new_line;
             widget_preview += '.gt_white_content {display:none;position:fixed;top:50%;left:50%;width:'+popup_width+'px;height:'+popup_height+'px;margin:-'+(popup_height/2)+'px 0 0 -'+(popup_width/2)+'px;padding:6px 16px;border-radius:5px;background-color:white;color:black;z-index:19881205;overflow:auto;text-align:left;}'+new_line;
             widget_preview += '.gt_white_content a {display:block;padding:5px 0;border-bottom:1px solid #e7e7e7;white-space:nowrap;}'+new_line;
@@ -637,7 +645,7 @@ function RefreshDoWidgetCode() {
             widget_preview += '</style>'+new_line+new_line;
 
             // javascript
-            widget_preview += '<script type="text/javascript">'+new_line;
+            widget_preview += '<script>'+new_line;
             widget_preview += "function openGTPopup(a) {jQuery('.gt_white_content a img').each(function() {if(!jQuery(this)[0].hasAttribute('src'))jQuery(this).attr('src', jQuery(this).attr('data-gt-lazy-src'))});if(a === undefined){document.getElementById('gt_lightbox').style.display='block';document.getElementById('gt_fade').style.display='block';}else{jQuery(a).parent().find('#gt_lightbox').css('display', 'block');jQuery(a).parent().find('#gt_fade').css('display', 'block');}}"+new_line;
             widget_preview += "function closeGTPopup() {jQuery('.gt_white_content').css('display', 'none');jQuery('.gt_black_overlay').css('display', 'none');}"+new_line;
             widget_preview += "function changeGTLanguage(pair, a) {doGTranslate(pair);jQuery('a.switcher-popup').html(jQuery(a).html()+'<span style=\"color:#666;font-size:8px;font-weight:bold;\">&#9660;</span>');closeGTPopup();}"+new_line;
@@ -670,20 +678,15 @@ function RefreshDoWidgetCode() {
             }
 
             // Adding slider css
-            widget_preview += '<style type="text/css">'+new_line;
+            widget_preview += '<style>'+new_line;
             widget_preview += '.switcher {font-family:Arial;font-size:'+font_size+'pt;text-align:left;cursor:pointer;overflow:hidden;width:'+widget_width+'px;line-height:17px;}'+new_line;
             widget_preview += '.switcher a {text-decoration:none;display:block;font-size:'+font_size+'pt;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}'+new_line;
-            widget_preview += '.switcher a img {vertical-align:middle;display:inline;border:0;padding:0;margin:0;opacity:0.8;}'+new_line;
+            widget_preview += '.switcher a img {vertical-align:middle;display:inline;border:0;padding:0;margin:0;opacity:0.8;'+(monochrome_flags ? 'filter:grayscale(100%);-webkit-filter:grayscale(100%);' : '' )+'}'+new_line;
             widget_preview += '.switcher a:hover img {opacity:1;}'+new_line;
-            //widget_preview += '.switcher .selected {background:#fff url($wp_plugin_url/switcher.png) repeat-x;position:relative;z-index:9999;}'+new_line;
             widget_preview += '.switcher .selected {background:'+switcher_background_color+' linear-gradient(180deg, '+switcher_background_shadow_color+' 0%, '+switcher_background_color+' 70%);position:relative;z-index:9999;}'+new_line;
-            //widget_preview += '.switcher .selected a {border:1px solid '+switcher_border_color+';background:url($wp_plugin_url/arrow_down.png) '+(widget_width - 2 * 5 - 2 * 1 - 5)+'px center no-repeat;color:'+switcher_text_color+';padding:3px 5px;width:'+(widget_width - 2 * 5 - 2 * 1)+'px;}'+new_line;
             widget_preview += '.switcher .selected a {border:1px solid '+switcher_border_color+';color:'+switcher_text_color+';padding:3px 5px;width:'+(widget_width - 2 * 5 - 2 * 1)+'px;}'+new_line;
-            //////widget_preview += '.switcher .selected a:after {height:'+flag_size+'px;display:inline-block;position:absolute;right:10px;width:15px;background-position:50%;background-size:'+arrow_size+'px;background-image:url($wp_plugin_url/arrow_down.svg);background-repeat:no-repeat;color:'+switcher_text_color+';line-height:37px;content:""!important;transition:all .2s;}'+new_line;
             widget_preview += '.switcher .selected a:after {height:'+flag_size+'px;display:inline-block;position:absolute;right:'+(flag_size < 20 ? 5 : 10)+'px;width:15px;background-position:50%;background-size:'+arrow_size+'px;background-image:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 285 285\'><path d=\'M282 76.5l-14.2-14.3a9 9 0 0 0-13.1 0L142.5 174.4 30.3 62.2a9 9 0 0 0-13.2 0L3 76.5a9 9 0 0 0 0 13.1l133 133a9 9 0 0 0 13.1 0l133-133a9 9 0 0 0 0-13z\' style=\'fill:'+escape(switcher_arrow_color)+'\'/></svg>");background-repeat:no-repeat;content:""!important;transition:all .2s;}'+new_line;
-            //widget_preview += '.switcher .selected a.open {background-image:url($wp_plugin_url/arrow_up.png)}'+new_line;
             widget_preview += '.switcher .selected a.open:after {-webkit-transform: rotate(-180deg);transform:rotate(-180deg);}'+new_line;
-            //widget_preview += '.switcher .selected a:hover {background:#f0f0f0 url($wp_plugin_url/arrow_down.png) '+(widget_width - 2 * 5 - 2 * 1 - 5)+'px center no-repeat;}'+new_line;
             widget_preview += '.switcher .selected a:hover {background:'+switcher_background_hover_color+'}'+new_line;
             widget_preview += '.switcher .option {position:relative;z-index:9998;border-left:1px solid '+switcher_border_color+';border-right:1px solid '+switcher_border_color+';border-bottom:1px solid '+switcher_border_color+';background-color:'+dropdown_background_color+';display:none;width:'+(widget_width - 2 * 1)+'px;max-height:198px;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;overflow-y:auto;overflow-x:hidden;}'+new_line;
             widget_preview += '.switcher .option a {color:'+dropdown_text_color+';padding:3px 5px;}'+new_line;
@@ -729,9 +732,10 @@ function RefreshDoWidgetCode() {
                     lang_name = gt_lang_array[lang];
 
                     var href = '#';
-                    if(pro_version)
+                    if(pro_version) {
                         href = (lang == default_language) ? '$site_url' : '$site_url'.replace('$site_url'.split('/').slice(0, 3).join('/'), '$site_url'.split('/').slice(0, 3).join('/')+'/'+lang);
-                    else if(enterprise_version)
+                        if(lang != default_language && href.endsWith('/'+lang)) href += '/';
+                    } else if(enterprise_version)
                         href = (lang == default_language) ? '$site_url' : '$site_url'.replace('$site_url'.split('/').slice(2, 3)[0].replace('www.', ''), lang + '.' + '$site_url'.split('/').slice(2, 3)[0].replace('www.', '')).replace('://www.', '://');
 
                     widget_preview += '<a href="'+href+'" onclick="doGTranslate(\''+default_language+'|'+lang+'\');jQuery(\'div.switcher div.selected a\').html(jQuery(this).html());return false;" title="'+lang_name+'" class="nturl'+(default_language == lang ? ' selected' : '')+'">';
@@ -760,7 +764,7 @@ function RefreshDoWidgetCode() {
             widget_preview += '</div>'+new_line;
 
             // Adding slider javascript
-            widget_preview += '<script type="text/javascript">'+new_line;
+            widget_preview += '<script>'+new_line;
             widget_preview += "jQuery('.switcher .selected').click(function() {jQuery('.switcher .option a img').each(function() {if(!jQuery(this)[0].hasAttribute('src'))jQuery(this).attr('src', jQuery(this).attr('data-gt-lazy-src'))});if(!(jQuery('.switcher .option').is(':visible'))) {jQuery('.switcher .option').stop(true,true).delay(100).slideDown(500);jQuery('.switcher .selected a').toggleClass('open')}});"+new_line;
             widget_preview += "jQuery('.switcher .option').bind('mousewheel', function(e) {var options = jQuery('.switcher .option');if(options.is(':visible'))options.scrollTop(options.scrollTop() - e.originalEvent.wheelDelta);return false;});"+new_line;
             widget_preview += "jQuery('body').not('.switcher').click(function(e) {if(jQuery('.switcher .option').is(':visible') && e.target != jQuery('.switcher .option').get(0)) {jQuery('.switcher .option').stop(true,true).delay(100).slideUp(500);jQuery('.switcher .selected a').toggleClass('open')}});"+new_line;
@@ -769,7 +773,7 @@ function RefreshDoWidgetCode() {
 
         // Adding javascript
         widget_code += new_line+new_line;
-        widget_code += '<script type="text/javascript">'+new_line;
+        widget_code += '<script>'+new_line;
         if(pro_version && translation_method == 'redirect' && new_window) {
             widget_code += "function openTab(url) {var form=document.createElement('form');form.method='post';form.action=url;form.target='_blank';document.body.appendChild(form);form.submit();}"+new_line;
             if(analytics)
@@ -796,9 +800,9 @@ function RefreshDoWidgetCode() {
             widget_code += "function GTranslateGetCurrentLang() {var keyValue = document['cookie'].match('(^|;) ?googtrans=([^;]*)(;|$)');return keyValue ? keyValue[2].split('/')[2] : null;}"+new_line;
             widget_code += "function GTranslateFireEvent(element,event){try{if(document.createEventObject){var evt=document.createEventObject();element.fireEvent('on'+event,evt)}else{var evt=document.createEvent('HTMLEvents');evt.initEvent(event,true,true);element.dispatchEvent(evt)}}catch(e){}}"+new_line;
             if(analytics)
-                widget_code += "function doGTranslate(lang_pair){if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];if(GTranslateGetCurrentLang() == null && lang == lang_pair.split('|')[0])return;if(typeof ga!='undefined'){ga('send', 'event', 'GTranslate', lang, location.hostname+location.pathname+location.search);}else{if(typeof _gaq!='undefined')_gaq.push(['_trackEvent', 'GTranslate', lang, location.hostname+location.pathname+location.search]);}var teCombo;var sel=document.getElementsByTagName('select');for(var i=0;i<sel.length;i++)if(/goog-te-combo/.test(sel[i].className)){teCombo=sel[i];break;}if(document.getElementById('google_translate_element2')==null||document.getElementById('google_translate_element2').innerHTML.length==0||teCombo.length==0||teCombo.innerHTML.length==0){setTimeout(function(){doGTranslate(lang_pair)},500)}else{teCombo.value=lang;GTranslateFireEvent(teCombo,'change');GTranslateFireEvent(teCombo,'change')}}"+new_line;
+                widget_code += "function doGTranslate(lang_pair){if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];if(GTranslateGetCurrentLang() == null && lang == lang_pair.split('|')[0])return;if(typeof ga!='undefined'){ga('send', 'event', 'GTranslate', lang, location.hostname+location.pathname+location.search);}else{if(typeof _gaq!='undefined')_gaq.push(['_trackEvent', 'GTranslate', lang, location.hostname+location.pathname+location.search]);}var teCombo;var sel=document.getElementsByTagName('select');for(var i=0;i<sel.length;i++)if(sel[i].className.indexOf('goog-te-combo')!=-1){teCombo=sel[i];break;}if(document.getElementById('google_translate_element2')==null||document.getElementById('google_translate_element2').innerHTML.length==0||teCombo.length==0||teCombo.innerHTML.length==0){setTimeout(function(){doGTranslate(lang_pair)},500)}else{teCombo.value=lang;GTranslateFireEvent(teCombo,'change');GTranslateFireEvent(teCombo,'change')}}"+new_line;
             else
-                widget_code += "function doGTranslate(lang_pair){if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];if(GTranslateGetCurrentLang() == null && lang == lang_pair.split('|')[0])return;var teCombo;var sel=document.getElementsByTagName('select');for(var i=0;i<sel.length;i++)if(/goog-te-combo/.test(sel[i].className)){teCombo=sel[i];break;}if(document.getElementById('google_translate_element2')==null||document.getElementById('google_translate_element2').innerHTML.length==0||teCombo.length==0||teCombo.innerHTML.length==0){setTimeout(function(){doGTranslate(lang_pair)},500)}else{teCombo.value=lang;GTranslateFireEvent(teCombo,'change');GTranslateFireEvent(teCombo,'change')}}"+new_line;
+                widget_code += "function doGTranslate(lang_pair){if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];if(GTranslateGetCurrentLang() == null && lang == lang_pair.split('|')[0])return;var teCombo;var sel=document.getElementsByTagName('select');for(var i=0;i<sel.length;i++)if(sel[i].className.indexOf('goog-te-combo')!=-1){teCombo=sel[i];break;}if(document.getElementById('google_translate_element2')==null||document.getElementById('google_translate_element2').innerHTML.length==0||teCombo.length==0||teCombo.innerHTML.length==0){setTimeout(function(){doGTranslate(lang_pair)},500)}else{teCombo.value=lang;GTranslateFireEvent(teCombo,'change');GTranslateFireEvent(teCombo,'change')}}"+new_line;
             if(widget_look == 'dropdown_with_flags') {
                 widget_code += "if(GTranslateGetCurrentLang() != null)jQuery(document).ready(function() {var lang_html = jQuery('div.switcher div.option').find('img[alt=\"'+GTranslateGetCurrentLang()+'\"]').parent().html();if(typeof lang_html != 'undefined')jQuery('div.switcher div.selected a').html(lang_html.replace('data-gt-lazy-', ''));});"+new_line;
             } else if(widget_look == 'popup') {
@@ -841,6 +845,7 @@ jQuery('#add_new_line').attr('checked', '$add_new_line'.length > 0);
 jQuery('#default_language').val('$default_language');
 jQuery('#widget_look').val('$widget_look');
 jQuery('#flag_size').val('$flag_size');
+jQuery('#monochrome_flags').attr('checked', '$monochrome_flags'.length > 0);
 jQuery('#switcher_text_color').val('$switcher_text_color');
 jQuery('#switcher_arrow_color').val('$switcher_arrow_color');
 jQuery('#switcher_border_color').val('$switcher_border_color');
@@ -887,9 +892,9 @@ if('$widget_look' == 'flags_dropdown') {
 }
 
 if('$widget_look' == 'dropdown' || '$widget_look' == 'lang_names' || '$widget_look' == 'lang_codes' || '$widget_look' == 'globe') {
-    jQuery('#flag_size_option').hide();
+    jQuery('#flag_size_option,#flag_monochrome_option').hide();
 } else {
-    jQuery('#flag_size_option').show();
+    jQuery('#flag_size_option,#flag_monochrome_option').show();
 }
 
 if(jQuery('#native_language_names:checked').length) {
@@ -1178,6 +1183,10 @@ EOT;
                         </select>
                         </td>
                     </tr>
+                    <tr id="flag_monochrome_option">
+                        <td class="option_name"><?php _e('Monochrome flags', 'gtranslate'); ?>:</td>
+                        <td><input id="monochrome_flags" name="monochrome_flags" value="1" type="checkbox" onclick="RefreshDoWidgetCode()" onchange="RefreshDoWidgetCode()"/></td>
+                    </tr>
                     <tr id="flag_languages_option" style="display:none;">
                         <td class="option_name" colspan="2"><div><?php _e('Flag languages', 'gtranslate'); ?>: <a onclick="jQuery('.connectedSortable1 input').attr('checked', true);RefreshDoWidgetCode()" style="cursor:pointer;text-decoration:underline;"><?php _e('Check All', 'gtranslate'); ?></a> | <a onclick="jQuery('.connectedSortable1 input').attr('checked', false);RefreshDoWidgetCode()" style="cursor:pointer;text-decoration:underline;"><?php _e('Uncheck All', 'gtranslate'); ?></a> <span style="float:right;"><b>HINT</b>: To reorder the languages simply drag and drop them in the list below.</span></div><br />
                         <div>
@@ -1266,7 +1275,7 @@ EOT;
 
         </div>
 
-        <script type="text/javascript">
+        <script>
         function gt_validate_form() {
            if(document.getElementById('use_encoding').checked)
                document.getElementById('widget_code').value =  btoa(encodeURIComponent(document.getElementById('widget_code').value));
@@ -1434,8 +1443,8 @@ EOT;
             </div>
         </div>
 
-        <script type="text/javascript"><?php echo $script; ?></script>
-        <style type="text/css">
+        <script><?php echo $script; ?></script>
+        <style>
         #widget_preview a:focus {box-shadow:none;outline:none;}
         .switcher_color_options button {box-shadow:none !important;border:1px solid #b4b9be !important;border-radius:0 !important;}
         .switcher_color_options h3 a {text-decoration:none;font-weight:400;}
@@ -1487,6 +1496,7 @@ EOT;
         $data['translation_method'] = 'onfly';
         $data['widget_look'] = isset($_POST['widget_look']) ? sanitize_text_field($_POST['widget_look']) : 'flags_dropdown';
         $data['flag_size'] = isset($_POST['flag_size']) ? intval($_POST['flag_size']) : '16';
+        $data['monochrome_flags'] = isset($_POST['monochrome_flags']) ? intval($_POST['monochrome_flags']) : '';
         $data['incl_langs'] = (isset($_POST['incl_langs']) and is_array($_POST['incl_langs'])) ? $_POST['incl_langs'] : array($data['default_language']);
         $data['fincl_langs'] = (isset($_POST['fincl_langs']) and is_array($_POST['fincl_langs'])) ? $_POST['fincl_langs'] : array($data['default_language']);
         $data['alt_flags'] = (isset($_POST['alt_flags']) and is_array($_POST['alt_flags'])) ? $_POST['alt_flags'] : array();
@@ -1578,6 +1588,7 @@ EOT;
 
         $data['widget_look'] = isset($data['widget_look']) ? $data['widget_look'] : 'dropdown_with_flags';
         $data['flag_size'] = isset($data['flag_size']) ? $data['flag_size'] : '24';
+        $data['monochrome_flags'] = isset($data['monochrome_flags']) ? $data['monochrome_flags'] : '';
         $data['widget_code'] = isset($data['widget_code']) ? $data['widget_code'] : '';
         $data['incl_langs'] = isset($data['incl_langs']) ? $data['incl_langs'] : array('en', 'es', 'it', 'pt', 'de', 'fr', 'ru', 'nl', 'ar', 'zh-CN');
         $data['fincl_langs'] = isset($data['fincl_langs']) ? $data['fincl_langs'] : array('en', 'es', 'it', 'pt', 'de', 'fr', 'ru', 'nl', 'ar', 'zh-CN');
@@ -2048,7 +2059,7 @@ if(!empty($data['show_in_menu'])) {
                 $items .= '</li>';
 
                 if($data['widget_look'] == 'flags_dropdown') {
-                    $items .= '<style type="text/css">.menu-item-gtranslate a {display:inline !important;padding:0 !important;margin:0 !important;}</style>';
+                    $items .= '<style>.menu-item-gtranslate a {display:inline !important;padding:0 !important;margin:0 !important;}</style>';
                 }
 
             } else {
@@ -2112,7 +2123,7 @@ if($data['pro_version'] or $data['enterprise_version']) {
         add_action('admin_head', 'gtranslate_request_uri_var');
 
     function gtranslate_request_uri_var() {
-        echo "<script type='text/javascript'>var gt_request_uri = '".addslashes($_SERVER['REQUEST_URI'])."';</script>";
+        echo "<script>var gt_request_uri = '".addslashes($_SERVER['REQUEST_URI'])."';</script>";
     }
 }
 
@@ -2317,7 +2328,7 @@ if($data['pro_version'] or $data['enterprise_version']) {
                 $json = $jsons[$i];
                 $js = $jss[$i];
 
-                $return .= "<script id='$attribute_id' type='application/json'>$json</script>\n<script type='text/javascript'>$js</script>\n";
+                $return .= "<script id='$attribute_id' type='application/json'>$json</script>\n<script>$js</script>\n";
             }
 
             return $return . $tag;
